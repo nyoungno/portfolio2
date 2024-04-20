@@ -30,8 +30,8 @@ body {
 section {
     padding: 182px;
     width: 100%;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 50px;
+    padding-bottom: 50PX;
 }
 
 .first_container {
@@ -105,6 +105,7 @@ section {
 .card {
     box-shadow: 0 3px 6px rgba(0, 0, 0, .2), 0 3px 6px rgba(0, 0, 0, .2);
     border-radius: 30px 30px;
+    --bs-card-inner-border-radius: 30px 30px;
 }
 
 
@@ -121,4 +122,30 @@ section {
 .Project_container {
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.card-text {
+    height: 180px;
+}
+
+.link_none{
+    text-decoration-line: none;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+}
+
+.icon_img {
+    width: 20px;
+}
+
+.mini_icon_box {
+    display: flex;
+    align-items: center;
+}
+
+
+.card_link {
+    display: flex;
+    justify-content: space-around;
 }
