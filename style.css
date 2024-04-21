@@ -156,6 +156,15 @@ section {
         justify-content: center;
         margin: 10px;
     }
+    .nav-item {
+        padding: 0;
+        font-weight: 500;
+        font-size: 20px;
+        color: black;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+    }
     section {
         padding: 0px;
         width: 100%;
