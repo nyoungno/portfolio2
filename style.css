@@ -216,10 +216,7 @@ section {
         box-shadow: 0 3px 6px rgba(0, 0, 0, .2), 0 3px 6px rgba(0, 0, 0, .2);
         
     }
-    .row-cols-md-3>* {
-        flex: 0 0 auto;
-        width: 50%;
-    }
+   
 }
 
 @media screen and (max-width: 48rem){
@@ -286,9 +283,5 @@ section {
         background-size: cover;
         background-repeat: no-repeat;
         box-shadow: 0 3px 6px rgba(0, 0, 0, .2), 0 3px 6px rgba(0, 0, 0, .2);
-    }
-    .row-cols-md-3>* {
-        flex: 0 0 auto;
-        width: 33.333333%;
     }
   }
