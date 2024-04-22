@@ -243,20 +243,13 @@ footer {
     .skill_image {
         text-align: center;
         display: inline-block;
-        width: 60px;
-        height: 60px;
+        width: 100px;
+        height: 100px;
         border-radius: 10px 10px;
         background-size: cover;
         background-repeat: no-repeat;
         box-shadow: 0 3px 6px rgba(0, 0, 0, .2), 0 3px 6px rgba(0, 0, 0, .2);
         
-    }
-   
-}
-@media (min-width: 768px) {
-    .row-cols-md-3>* {
-        flex: 0 0 auto;
-        width: 50%;
     }
 }
 
