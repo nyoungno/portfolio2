@@ -253,6 +253,12 @@ footer {
     }
    
 }
+@media (min-width: 768px) {
+    .row-cols-md-3>* {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
 
 @media screen and (max-width: 48rem){
     .nav_container {
