@@ -1,430 +1,433 @@
 body {
-    background-color: white;
-    background-size: cover;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif; 
+  background-color: white;
+  background-size: cover;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-
 .nav_container {
-    display: flex;
-    justify-content: center;
-    margin-top: 78px;
+  display: flex;
+  justify-content: center;
+  margin-top: 78px;
 }
 
 .navbar {
-    width: 1528px;
-    height: 59px;
+  width: 1528px;
+  height: 59px;
 }
 .container-fluid {
-    padding: 0;
+  padding: 0;
 }
 
 .nav-item {
-    padding: 33px;
-    padding-right: 0px;
-    font-weight: 500;
-    font-size: 20px;
-    color: gray;
+  padding: 33px;
+  padding-right: 0px;
+  font-weight: 500;
+  font-size: 20px;
+  color: gray;
 }
 
 section {
-    padding: 182px;
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50PX;
+  padding: 182px;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .first_container {
-    align-items: center;
-    display: flex;
-    padding-top: 200px;
-    padding-bottom: 200px;
+  align-items: center;
+  display: flex;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .action_message {
-    min-width: 648px;
+  min-width: 648px;
 }
 
 .icon_box {
-    display: flex;
-    justify-content: space-between;
-    width: 220px;
-    padding-bottom : 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  padding-bottom: 20px;
 }
 .profile {
-    min-width: 648px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
+  min-width: 648px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .action_style {
-    font-weight: bolder;
-    font-size: 58px;
-    
+  font-weight: bolder;
+  font-size: 58px;
 }
 
 .picture {
-    width: 349px;
-    height: 349px;
-    object-fit : cover;
-    position: relative;
-    margin: 10px;
-    border: 9px solid transparent;
-    border-radius: 50%;
-    background-image: linear-gradient(#fff, #fff), 
-    linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, .4), 0 6px 12px rgba(0, 0, 0, .4);
+  width: 349px;
+  height: 349px;
+  object-fit: cover;
+  position: relative;
+  margin: 10px;
+  border: 9px solid transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(
+      to bottom right,
+      #b827fc 0%,
+      #2c90fc 25%,
+      #b8fd33 50%,
+      #fec837 75%,
+      #fd1892 100%
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 .stack_font {
-    font-weight: bolder;
-    text-align: center;
+  font-weight: bolder;
+  text-align: center;
 }
 
 .stack_box {
-    padding-top: 150px;
-    padding-bottom: 150px;
-    display: flex;
-    justify-content: space-around;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .skill_image {
-    text-align: center;
-    display: inline-block;
-    width: 180px;
-    height: 180px;
-    border-radius: 30px 30px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, .2), 0 3px 6px rgba(0, 0, 0, .2);
+  text-align: center;
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+  border-radius: 30px 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 .card {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, .2), 0 3px 6px rgba(0, 0, 0, .2);
-    border-radius: 30px 30px;
-    --bs-card-inner-border-radius: 30px 30px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 30px 30px;
+  --bs-card-inner-border-radius: 30px 30px;
 }
 
-
 .Project_font {
-    font-weight: bolder;
-    text-align: center;
+  font-weight: bolder;
+  text-align: center;
 }
 
 .Project_sub_font {
-    text-align: center;
+  text-align: center;
 }
-
 
 .Project_container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.card-title {
+  font-weight: bolder;
+}
+.card-text {
+  height: 180px;
+}
+
+.link_none {
+  text-decoration-line: none;
+  font-weight: bolder;
+  font-size: 20px;
+  color: black;
+}
+
+.icon_img {
+  width: 20px;
+}
+
+.mini_icon_box {
+  display: flex;
+  align-items: center;
+}
+
+.card_link {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  height: 11rem;
+  padding-top: 3rem;
+  background-color: #222;
+  text-align: center;
+}
+.footer_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+}
+.line_icon {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  position: relative;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(
+      to bottom right,
+      #fafafa 100%,
+      #2c90fc 25%,
+      #b8fd33 50%,
+      #fec837 75%,
+      #fd1892 100%
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+.footer_text {
+  color: #fafafa;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1198px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .nav_container {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+  .nav-item {
+    padding: 0;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+  section {
+    padding: 0px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .first_container {
+    align-items: center;
+    display: block;
     padding-top: 50px;
     padding-bottom: 50px;
-}
-
-.card-text {
+  }
+  .action_message {
+    min-width: 0px;
+  }
+  .action_style {
+    font-weight: bolder;
+    font-size: 38px;
+  }
+  .profile {
+    min-width: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon_box {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .stack_box {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .skill_image {
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  .link_none {
+    text-decoration-line: none;
+    font-weight: bolder;
+    font-size: 12px;
+    color: black;
+  }
+  .card-text {
     height: 180px;
+    font-size: 12px;
+  }
 }
 
-.link_none{
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .nav_container {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+  .nav-item {
+    padding: 0;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+  section {
+    padding: 0px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .first_container {
+    align-items: center;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .action_message {
+    min-width: 0px;
+  }
+  .action_style {
+    font-weight: bolder;
+    font-size: 38px;
+  }
+  .profile {
+    min-width: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon_box {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .stack_box {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .skill_image {
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  .link_none {
+    text-decoration-line: none;
+    font-weight: bolder;
+    font-size: 12px;
+    color: black;
+  }
+  .card-text {
+    height: 180px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .nav_container {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+  .nav-item {
+    padding: 0;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+  section {
+    padding: 0px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .first_container {
+    align-items: center;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .action_message {
+    min-width: 0px;
+  }
+  .action_style {
+    font-weight: bolder;
+    font-size: 38px;
+  }
+  .profile {
+    min-width: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon_box {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .stack_box {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .skill_image {
+    text-align: center;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  .link_none {
     text-decoration-line: none;
     font-weight: bolder;
     font-size: 20px;
     color: black;
-}
-
-.icon_img {
-    width: 20px;
-}
-
-.mini_icon_box {
-    display: flex;
-    align-items: center;
-}
-
-
-.card_link {
-    display: flex;
-    justify-content: space-around;
-}
-
-footer {
-    height: 11rem;
-    padding-top: 3rem;
-    background-color: #222;
-    text-align: center;
-}
-.footer_box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.footer_icon {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 220px;
-}
-.line_icon {
-    width: 55px;
-    height: 55px;
-    object-fit : cover;
-    position: relative;
-    border: 3px solid transparent;
-    border-radius: 50%;
-    background-image: linear-gradient(#fff, #fff), 
-    linear-gradient(to bottom right, #fafafa 100%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, .4), 0 6px 12px rgba(0, 0, 0, .4);
-}
-.footer_text {
-    color: #fafafa;
-    text-align: center;
-}
-
-@media only screen and (min-width:1024px) {
-}
-
-@media only screen and (min-width:992px) and (max-width: 1198px) {
-    .container {
-        max-width: 100%;
-    }
-
-    .nav_container {
-        display: flex;
-        justify-content: center;
-        margin: 10px;
-    }
-    .nav-item {
-        padding: 0;
-        font-weight: 500;
-        font-size: 20px;
-        color: black;
-        display: flex;
-        justify-content: center;
-        background-color: white;
-    }
-    section {
-        padding: 0px;
-        width: 100%;
-        padding-top: 20px;
-        padding-bottom: 20PX;
-    }
-    .first_container {
-        align-items: center;
-        display: block;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .action_message {
-        min-width: 0px;
-    }
-    .action_style {
-        font-weight: bolder;
-        font-size: 38px;
-        
-    }
-    .profile {
-        min-width: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-    }
-    .icon_box {
-        display: flex;
-        justify-content: flex-start;
-        gap: 20px;
-        width: 100%;
-        padding-bottom : 20px;
-    }
-    .stack_box {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        display: flex;
-        justify-content: space-around;
-    }
-    .skill_image {
-        text-align: center;
-        display: inline-block;
-        width: 100px;
-        height: 100px;
-        border-radius: 10px 10px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, .2), 0 3px 6px rgba(0, 0, 0, .2);
-        
-    }
-    .link_none {
-        text-decoration-line: none;
-        font-weight: bolder;
-        font-size: 12px;
-        color: black;
-    }
-    .card-text {
-        height: 180px;
-        font-size: 12px;
-    }
-}
-
-@media only screen and (min-width: 767px) and (max-width:991px){
-    .container {
-        max-width: 100%;
-    }
-
-    .nav_container {
-        display: flex;
-        justify-content: center;
-        margin: 10px;
-    }
-    .nav-item {
-        padding: 0;
-        font-weight: 500;
-        font-size: 20px;
-        color: black;
-        display: flex;
-        justify-content: center;
-        background-color: white;
-    }
-    section {
-        padding: 0px;
-        width: 100%;
-        padding-top: 20px;
-        padding-bottom: 20PX;
-    }
-    .first_container {
-        align-items: center;
-        display: block;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .action_message {
-        min-width: 0px;
-    }
-    .action_style {
-        font-weight: bolder;
-        font-size: 38px;
-        
-    }
-    .profile {
-        min-width: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-    }
-    .icon_box {
-        display: flex;
-        justify-content: flex-start;
-        gap: 20px;
-        width: 100%;
-        padding-bottom : 20px;
-    }
-    .stack_box {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        display: flex;
-        justify-content: space-around;
-    }
-    .skill_image {
-        text-align: center;
-        display: inline-block;
-        width: 100px;
-        height: 100px;
-        border-radius: 10px 10px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, .2), 0 3px 6px rgba(0, 0, 0, .2);
-        
-    }
-    .link_none {
-        text-decoration-line: none;
-        font-weight: bolder;
-        font-size: 12px;
-        color: black;
-    }
-    .card-text {
-        height: 180px;
-        font-size: 12px;
-    }
-}
-
-@media only screen and (max-width: 767px){
-    .nav_container {
-        display: flex;
-        justify-content: center;
-        margin: 10px;
-    }
-    .nav-item {
-        padding: 0;
-        font-weight: 500;
-        font-size: 20px;
-        color: black;
-        display: flex;
-        justify-content: center;
-        background-color: white;
-    }
-    section {
-        padding: 0px;
-        width: 100%;
-        padding-top: 20px;
-        padding-bottom: 20PX;
-    }
-    .first_container {
-        align-items: center;
-        display: block;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .action_message {
-        min-width: 0px;
-    }
-    .action_style {
-        font-weight: bolder;
-        font-size: 38px;
-        
-    }
-    .profile {
-        min-width: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-    }
-    .icon_box {
-        display: flex;
-        justify-content: flex-start;
-        gap: 20px;
-        width: 100%;
-        padding-bottom : 20px;
-    }
-    .stack_box {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        display: flex;
-        justify-content: space-around;
-    }
-    .skill_image {
-        text-align: center;
-        display: inline-block;
-        width: 60px;
-        height: 60px;
-        border-radius: 10px 10px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, .2), 0 3px 6px rgba(0, 0, 0, .2);
-    }
-    .link_none {
-        text-decoration-line: none;
-        font-weight: bolder;
-        font-size: 20px;
-        color: black;
-    }
-    .card-text {
-        height: 180px;
-        font-size: 16px;
-    }
   }
+  .card-text {
+    height: 180px;
+    font-size: 16px;
+  }
+}
