@@ -58,8 +58,9 @@ section {
 }
 
 .action_style {
+  text-align: center;
   font-weight: bolder;
-  font-size: 58px;
+  font-size: 37px;
 }
 
 .picture {
@@ -195,10 +196,34 @@ footer {
   color: #fafafa;
   text-align: center;
 }
-
-@media only screen and (min-width: 1024px) {
+.update_container1 {
+  display: none;
+  font-weight: bolder;
+}
+.update_container2 {
+  display: block;
+  font-weight: bolder;
 }
 
+@media (max-width: 1024px) {
+  .update_container1 {
+    display: none;
+  }
+  .update_container2 {
+    margin: 100px;
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .update_container1 {
+    display: block;
+  }
+  .update_container2 {
+    margin: 100px;
+    display: none;
+  }
+}
 @media only screen and (min-width: 992px) and (max-width: 1198px) {
   .container {
     max-width: 100%;
@@ -358,6 +383,9 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
+  .update_container2 {
+    margin: 10px;
+  }
   .nav_container {
     display: flex;
     justify-content: center;
@@ -389,7 +417,7 @@ footer {
   }
   .action_style {
     font-weight: bolder;
-    font-size: 38px;
+    font-size: 25px;
   }
   .profile {
     min-width: 0px;
