@@ -1400,6 +1400,253 @@
       });
     });
   </script>
+  <style>
+    /* 모달 배경 */
+    .modal {
+      display: none;
+      /* 처음에는 숨김 */
+      position: fixed;
+      /* 고정 위치 */
+      z-index: 9999;
+      /* 최대한 높은 z-index 값으로 설정 */
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      /* 스크롤 가능하게 */
+      background-color: rgba(0, 0, 0, 0.8);
+      /* 더 진한 배경 */
+      opacity: 0;
+      /* 처음에는 투명하게 */
+      transition: opacity 0.3s ease;
+      /* 투명도에 트랜지션 효과 */
+    }
+
+    /* 모달 표시 상태 */
+    .modal.show {
+      opacity: 1;
+    }
+
+    /* 모달 내용 - 전체화면으로 수정 */
+    .modal-content {
+      background-image: url(stars-dark-night-scenefield-bright-star-dark-blue-background_1962-2452.jpg);
+      background-size: cover;
+      margin: 0;
+      /* 여백 없앰 */
+      padding: 40px;
+      width: 100%;
+      /* 전체 너비 */
+      height: 100%;
+      /* 전체 높이 */
+      box-sizing: border-box;
+      /* 패딩을 포함한 크기 계산 */
+      border: none;
+      /* 테두리 제거 */
+      border-radius: 0;
+      /* 모서리 둥글게 제거 */
+      overflow-y: auto;
+      /* 내용이 많을 경우 스크롤 */
+      transform: translateY(20px);
+      /* 처음 위치를 아래로 */
+      opacity: 0;
+      /* 처음에는 투명하게 */
+      transition: transform 0.4s ease, opacity 0.4s ease;
+      /* 트랜지션 효과 */
+      color: white;
+    }
+
+    /* 모달 내용 표시 상태 */
+    .modal.show .modal-content {
+      transform: translateY(0);
+      /* 원래 위치로 */
+      opacity: 1;
+    }
+
+    /* 닫기 버튼 - 더 눈에 띄게 */
+    .close {
+      position: absolute;
+      right: 30px;
+      top: 20px;
+      color: white;
+      font-size: 35px;
+      font-weight: bold;
+      z-index: 10;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* 히어로 콘텐츠 스타일 */
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100%;
+      padding: 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+      color: white;
+      font-weight: 700;
+    }
+
+    .intro {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      color: white;
+      max-width: 600px;
+    }
+
+    .profile {
+      margin: 2rem 0;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #f0f0f0;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+
+    .update {
+      font-size: 0.9rem;
+      color: #999;
+      margin-bottom: 2rem;
+    }
+
+    .arrow-down {
+      font-size: 2rem;
+      margin-top: 1.5rem;
+      animation: bounce 1.5s infinite;
+      color: #555;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        transform: translateY(0);
+      }
+
+      40% {
+        transform: translateY(-20px);
+      }
+
+      60% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes fadeUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate {
+      opacity: 0;
+      animation: fadeUp 0.8s ease-out forwards;
+    }
+
+    .intro:nth-of-type(1) {
+      animation-delay: 0.3s;
+    }
+
+    .intro:nth-of-type(2) {
+      animation-delay: 0.6s;
+    }
+  </style>
+  </head>
+
+  <body>
+
+    <!-- 모달 -->
+    <div id="myModal" class="modal">
+      <!-- 모달 내용 -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <!-- 히어로 콘텐츠 추가 -->
+        <div class="hero-content">
+          <h1>Front-End</h1>
+          <p class="intro animate">프론트엔드 개발자 홍길동입니다.</p>
+          <p class="intro animate">사용자를 생각하는 직관적인 UI/UX,<br>효과적이고 깔끔한 코드로 가치를 만들어갑니다.</p>
+          <div class="profile">
+            <img src="profile.png" alt="프로필 이미지" class="profile-img">
+          </div>
+          <div class="contact">yghjbm@gmail.com</div>
+          <div class="update">update 24.04.08</div>
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+      // 모달 요소 가져오기
+      var modal = document.getElementById("myModal");
+      var span = document.getElementsByClassName("close")[0];
+
+      // 페이지 로드 시 모달 표시
+      window.onload = function () {
+        modal.style.display = "block";
+        // 약간의 지연 후 애니메이션 시작 (CSS가 적용될 시간을 주기 위해)
+        setTimeout(function () {
+          modal.classList.add("show");
+        }, 10);
+      }
+
+      // X 버튼 클릭시 모달 자연스럽게 닫기
+      span.onclick = function () {
+        closeModalWithAnimation();
+      }
+
+      // 모달 외부 클릭시 자연스럽게 닫기
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          closeModalWithAnimation();
+        }
+      }
+
+      // 모달을 애니메이션과 함께 닫는 함수
+      function closeModalWithAnimation() {
+        modal.classList.remove("show");
+        // 애니메이션이 완료될 때까지 기다린 후 display:none 설정
+        setTimeout(function () {
+          modal.style.display = "none";
+        }, 400); // 트랜지션 시간과 같거나 약간 더 길게
+      }
+    </script>
+
+  </body>
+
+</html>
 </body>
 
 </html>
